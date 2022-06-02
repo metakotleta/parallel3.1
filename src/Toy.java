@@ -3,7 +3,7 @@ public class Toy {
     private boolean runningFlag = true;
 
     public void checkOn() {
-        while (runningFlag) {
+        while (!Thread.currentThread().isInterrupted()) {
             if (switcher) {
                 System.out.printf("%s выключает тумблер\n", Thread.currentThread().getName());
                 switcher = false;
@@ -18,9 +18,4 @@ public class Toy {
     public boolean getState() {
         return switcher;
     }
-
-    public void stopThread() {
-        runningFlag = false;
-    }
-
 }

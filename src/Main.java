@@ -10,6 +10,6 @@ public class Main {
         toyThread.start();
         vasyaThread.start();
         vasyaThread.join();
-        toy.stopThread();
+        toyThread.interrupt();
     }
 }

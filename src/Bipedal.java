@@ -1,6 +1,6 @@
 public class Bipedal {
     private static final long SLEEP = 3000;
-    private static final long COUNT = 3000;
+    private static final long COUNT = 3;
     private Toy toy;
 
     public Bipedal(Toy toy) {
